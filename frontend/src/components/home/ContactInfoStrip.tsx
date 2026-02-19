@@ -9,7 +9,7 @@ const ContactInfoStrip: React.FC = () => {
         {
             icon: <HiPhone size={32} />,
             title: 'Call us',
-            content: '+91 98765 43210'
+            content: '+91 8875692821'
         },
         {
             icon: <HiMail size={32} />,

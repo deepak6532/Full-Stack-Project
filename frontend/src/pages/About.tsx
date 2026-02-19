@@ -46,7 +46,7 @@ const About: React.FC = () => {
                         <div className="space-y-4">
                             <div className="flex items-center gap-3">
                                 <HiPhone className="text-[var(--color-primary)]" size={20} />
-                                <span className={isDark ? 'text-gray-300' : 'text-gray-700'}>+91 98765 43210</span>
+                                <span className={isDark ? 'text-gray-300' : 'text-gray-700'}>+91 8875692821</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <HiMail className="text-[var(--color-primary)]" size={20} />
