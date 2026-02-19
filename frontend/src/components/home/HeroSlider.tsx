@@ -2,36 +2,36 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiArrowRight } from 'react-icons/hi';
-import bentleyImg from '../../assets/slider/bentley.jpg';
-import audiImg from '../../assets/slider/audi.jpg';
-import suvImg from '../../assets/slider/suv.jpg';
+import xuv700Img from '../../assets/slider/xuv700.jpg';
+import tharImg from '../../assets/slider/thar.jpg';
+import scorpioImg from '../../assets/cars/scorpio-n.jpg';
 
 const slides = [
     {
         id: 1,
-        image: bentleyImg,
+        image: xuv700Img,
         title: 'Premium',
         subtitle: 'Rental Car',
-        carName: 'Bentley Bentayga',
-        price: '600',
+        carName: 'Mahindra XUV700',
+        price: '₹3,500',
         link: '/cars'
     },
     {
         id: 2,
-        image: audiImg,
-        title: 'Sport',
+        image: tharImg,
+        title: 'Adventure',
         subtitle: 'Rental Car',
-        carName: 'Audi R8 Spyder',
-        price: '850',
+        carName: 'Mahindra Thar',
+        price: '₹3,000',
         link: '/cars'
     },
     {
         id: 3,
-        image: suvImg,
+        image: scorpioImg,
         title: 'Family',
         subtitle: 'Rental Car',
-        carName: 'Ford Explorer',
-        price: '400',
+        carName: 'Mahindra Scorpio N',
+        price: '₹2,800',
         link: '/cars'
     }
 ];
@@ -59,10 +59,10 @@ const HeroSlider: React.FC = () => {
                 >
                     {/* Background Image with Overlay */}
                     <div
-                        className="absolute inset-0 bg-cover bg-center"
+                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
                         style={{ backgroundImage: `url(${slides[current].image})` }}
                     />
-                    <div className="absolute inset-0 bg-black/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
 
                     {/* Content */}
                     <div className="absolute inset-0 flex items-center">
@@ -84,9 +84,8 @@ const HeroSlider: React.FC = () => {
                                         {slides[current].carName}
                                     </h2>
                                     <div className="flex items-baseline">
-                                        <span className="text-orange-500 text-3xl font-bold">$</span>
                                         <span className="text-orange-500 text-4xl font-bold">{slides[current].price}</span>
-                                        <span className="text-gray-300 ml-2">/ YEAR</span>
+                                        <span className="text-gray-300 ml-2">/ Day</span>
                                     </div>
                                 </div>
 

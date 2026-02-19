@@ -7,14 +7,14 @@ const testDefaultUser = {
     name: 'Default User',
     email: `default${Date.now()}@example.com`,
     password: 'password123',
-    phone: '9876543210'
+    phone: '8875692821'
 };
 
 const testAdminUser = {
     name: 'Admin User',
     email: `admin${Date.now()}@example.com`,
     password: 'password123',
-    phone: '9876543210',
+    phone: '8875692821',
     role: 'admin'
 };
 

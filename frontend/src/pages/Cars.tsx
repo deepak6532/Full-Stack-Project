@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { HiUsers, HiCog, HiLightningBolt, HiSearch, HiSparkles } from 'react-icons/hi';
 import { useTheme } from '../context/ThemeContext';
 import API from '../api/axios';
@@ -19,14 +19,29 @@ const Cars: React.FC = () => {
         fetchCars();
     }, []);
 
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const typeFilter = queryParams.get('type');
+
     useEffect(() => {
         let result = cars;
         if (search) result = result.filter(c => c.name.toLowerCase().includes(search.toLowerCase()) || c.brand.toLowerCase().includes(search.toLowerCase()));
         if (brandFilter) result = result.filter(c => c.brand === brandFilter);
         if (fuelFilter) result = result.filter(c => c.fuelType === fuelFilter);
         if (transFilter) result = result.filter(c => c.transmission === transFilter);
+
+        if (typeFilter === 'Indian') {
+            result = result.filter(c => ['Tata', 'Mahindra', 'Maruti', 'Hyundai', 'Kia'].includes(c.brand));
+        } else if (typeFilter === 'Luxury') {
+            result = result.filter(c => c.pricePerDay > 5000 || ['BMW', 'Audi', 'Mercedes', 'Jaguar'].includes(c.brand));
+        } else if (typeFilter === 'Sport') {
+            result = result.filter(c => c.name.toLowerCase().includes('sport') || c.description.toLowerCase().includes('sport') || ['Ferrari', 'Lamborghini', 'Porsche'].includes(c.brand));
+        } else if (typeFilter === 'SUV') {
+            result = result.filter(c => c.name.toLowerCase().includes('suv') || c.description.toLowerCase().includes('suv') || ['XUV', 'Thar', 'Scorpio', 'Fortuner', 'Creta', 'Nexon'].some(model => c.name.includes(model)));
+        }
+
         setFiltered(result);
-    }, [search, brandFilter, fuelFilter, transFilter, cars]);
+    }, [search, brandFilter, fuelFilter, transFilter, cars, typeFilter]);
 
     const fetchCars = async () => {
         try {
@@ -156,8 +171,21 @@ const Cars: React.FC = () => {
                                 <div className="relative h-56 overflow-hidden">
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity"></div>
                                     <img
-                                        src={car.image}
+                                        src={
+                                            // Image Override Map for Indian Cars
+                                            {
+                                                'Bolero': '/cars/bolero.jpg',
+                                                'Wagon R': '/cars/wagonr.jpg',
+                                                'Tiago': '/cars/tiago.jpg',
+                                                'Maruti Brezza': '/cars/maruti-brezza.jpg', // Assuming public copy exists or pointing to assets if handled
+                                                // Add others if needed
+                                            }[car.name] || car.image
+                                        }
                                         alt={car.name}
+                                        onError={(e) => {
+                                            // Fallback if local image fails
+                                            e.currentTarget.src = 'https://placehold.co/600x400?text=' + car.name;
+                                        }}
                                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                     />
                                     {/* Badges */}
