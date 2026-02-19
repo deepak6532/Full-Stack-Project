@@ -2,23 +2,23 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../../context/ThemeContext';
-import { HiArrowLeft, HiArrowRight, HiArrowUp } from 'react-icons/hi';
+import { HiArrowLeft, HiArrowRight } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 
-import teslaImg from '../../assets/cars/tesla-model-s.jpg';
-import hyundaiImg from '../../assets/cars/hyundai-kona.jpg';
-import mercedesImg from '../../assets/cars/mercedes-benz.jpg';
-import audiImg from '../../assets/cars/audi-r8.jpg';
-import camaroImg from '../../assets/cars/chevrolet-camaro.jpg';
-import bmwImg from '../../assets/cars/bmw-m4.jpg';
+import nexonImg from '../../assets/cars/tata-nexon.jpg';
+import swiftImg from '../../assets/cars/maruti-swift.jpg';
+import tharImg from '../../assets/cars/mahindra-thar.jpg';
+import xuv700Img from '../../assets/cars/mahindra-xuv700.jpg';
+import brezzaImg from '../../assets/cars/maruti-brezza.jpg';
+import scorpioImg from '../../assets/cars/scorpio-n.jpg';
 
 const vehicles = [
-    { id: 1, name: 'Tesla Model S Plaid', image: teslaImg, link: '/cars/tesla-model-s' },
-    { id: 2, name: 'Hyundai Kona', image: hyundaiImg, link: '/cars/hyundai-kona' },
-    { id: 3, name: 'Mercedes Benz', image: mercedesImg, link: '/cars/mercedes-benz' },
-    { id: 4, name: 'Audi R8', image: audiImg, link: '/cars/audi-r8' },
-    { id: 5, name: 'Chevrolet Camaro', image: camaroImg, link: '/cars/chevrolet-camaro' },
-    { id: 6, name: 'BMW M4', image: bmwImg, link: '/cars/bmw-m4' }
+    { id: 1, name: 'Tata Nexon', image: nexonImg, link: '/cars' },
+    { id: 2, name: 'Maruti Swift', image: swiftImg, link: '/cars' },
+    { id: 3, name: 'Mahindra Thar', image: tharImg, link: '/cars' },
+    { id: 4, name: 'Mahindra XUV700', image: xuv700Img, link: '/cars' },
+    { id: 5, name: 'Maruti Brezza', image: brezzaImg, link: '/cars' },
+    { id: 6, name: 'Mahindra Scorpio N', image: scorpioImg, link: '/cars' }
 ];
 
 const FeaturedVehicles: React.FC = () => {
@@ -46,7 +46,7 @@ const FeaturedVehicles: React.FC = () => {
                         Our <span className="text-red-500">Vehicles</span>
                     </h2>
                     <p className={`text-center max-w-2xl mx-auto mt-4 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
-                        Explore our premium fleet designed for comfort and performance.
+                        Explore our fleet of India's finest cars designed for comfort, performance, and affordable rentals.
                     </p>
                 </div>
 

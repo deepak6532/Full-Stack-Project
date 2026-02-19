@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTheme } from '../../context/ThemeContext';
 import { HiSparkles, HiShieldCheck, HiStar } from 'react-icons/hi';
+import heroCarImg from '../../assets/images/hero-car.jpg';
 
 const Hero: React.FC = () => {
     const { isDark } = useTheme();
@@ -80,8 +81,8 @@ const Hero: React.FC = () => {
                 >
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
                     <motion.img
-                        src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000&auto=format&fit=crop"
-                        alt="Luxury Sports Car"
+                        src={heroCarImg}
+                        alt="Mahindra XUV700"
                         className="relative z-10 w-full object-contain drop-shadow-2xl"
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}

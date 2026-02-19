@@ -1,26 +1,25 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../../context/ThemeContext';
 import { Link } from 'react-router-dom';
 import { HiArrowRight } from 'react-icons/hi';
 
-import luxuryImg from '../../assets/types/luxury.jpg';
-import sportImg from '../../assets/types/sport.jpg';
+import hatchbackImg from '../../assets/types/hatchback.jpg';
+import sedanImg from '../../assets/types/sedan.jpg';
 import suvImg from '../../assets/types/suv.jpg';
 
 const carTypes = [
     {
         id: 1,
-        title: 'Luxury Cars',
-        image: luxuryImg,
-        link: '/cars?type=Luxury'
+        title: 'Hatchback',
+        image: hatchbackImg,
+        link: '/cars?type=Hatchback'
     },
     {
         id: 2,
-        title: 'Sport Cars',
-        image: sportImg,
-        link: '/cars?type=Sport'
+        title: 'Sedan',
+        image: sedanImg,
+        link: '/cars?type=Sedan'
     },
     {
         id: 3,
@@ -50,27 +49,22 @@ const CarTypes: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             viewport={{ once: true }}
-                            className="relative group h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-2xl"
+                            className={`rounded-2xl overflow-hidden border ${isDark ? 'bg-white/5 border-white/10' : 'bg-slate-50 border-slate-200'} hover:shadow-xl transition-all hover:-translate-y-2 h-full`}
                         >
-                            <img
-                                src={type.image}
-                                alt={type.title}
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-
-                            <div className="absolute top-8 left-8">
-                                <h3 className="text-3xl font-bold text-white">{type.title}</h3>
-                            </div>
-
-                            <Link
-                                to={type.link}
-                                className="absolute bottom-8 left-8 w-14 h-14 rounded-full bg-transparent border-2 border-orange-500 text-orange-500 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300 group-hover:scale-110"
-                            >
-                                <HiArrowRight size={24} />
+                            <Link to={type.link} className="block h-full flex flex-col">
+                                <div className="h-64 p-4 flex items-center justify-center bg-transparent overflow-hidden relative group">
+                                    <img
+                                        src={type.image}
+                                        alt={type.title}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 rounded-xl"
+                                    />
+                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300 rounded-xl" />
+                                </div>
+                                <div className={`p-6 text-center flex-grow flex items-center justify-center ${isDark ? 'bg-[#151f32]' : 'bg-gray-100'}`}>
+                                    <h3 className={`text-2xl font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>{type.title}</h3>
+                                    <HiArrowRight className={`ml-3 ${isDark ? 'text-white' : 'text-slate-900'}`} size={20} />
+                                </div>
                             </Link>
-
-                            <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-orange-500/20 blur-[50px] rounded-full group-hover:bg-orange-500/40 transition-all duration-500"></div>
                         </motion.div>
                     ))}
                 </div>

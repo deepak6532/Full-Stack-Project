@@ -6,6 +6,7 @@ import CarTypes from '../components/home/CarTypes';
 import FeaturedVehicles from '../components/home/FeaturedVehicles';
 import ContactCTA from '../components/home/ContactCTA';
 import Hero from '../components/home/Hero'; // Using old hero as second section
+import Testimonials from '../components/home/Testimonials';
 
 const Home: React.FC = () => {
     const { isDark } = useTheme();
@@ -29,7 +30,10 @@ const Home: React.FC = () => {
             {/* 5. Featured Vehicles (Slider) */}
             <FeaturedVehicles />
 
-            {/* 6. Contact CTA */}
+            {/* 6. Testimonials */}
+            <Testimonials />
+
+            {/* 7. Contact CTA */}
             <ContactCTA />
         </div>
     );
