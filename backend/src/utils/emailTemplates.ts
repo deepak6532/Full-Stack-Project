@@ -25,7 +25,7 @@ export const bookingReceivedEmail = (bookingId: string, userName: string): strin
       <p>If you have any questions, feel free to reach out to our support team.</p>
     </div>
     <div class="footer">
-      <p>© 2024 Gupta Car Rental. All rights reserved.</p>
+      <p>© 2026 Gupta Car Rental. All rights reserved.</p>
     </div>
   </div>
 </body>
@@ -60,7 +60,7 @@ export const bookingApprovedEmail = (bookingId: string, userName: string, carNam
       <p>We look forward to seeing you! Please arrive on time for your pickup.</p>
     </div>
     <div class="footer">
-      <p>© 2024 Gupta Car Rental. All rights reserved.</p>
+      <p>© 2026 Gupta Car Rental. All rights reserved.</p>
     </div>
   </div>
 </body>
@@ -93,7 +93,7 @@ export const bookingDeclinedEmail = (bookingId: string, userName: string): strin
       <p>Please try booking another vehicle or contact our support team for assistance.</p>
     </div>
     <div class="footer">
-      <p>© 2024 Gupta Car Rental. All rights reserved.</p>
+      <p>© 2026 Gupta Car Rental. All rights reserved.</p>
     </div>
   </div>
 </body>

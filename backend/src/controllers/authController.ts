@@ -117,7 +117,7 @@ export const createAdmin = async (req: AuthRequest, res: Response): Promise<void
         if (
             !adminSecret ||
             !process.env.ADMIN_SECRET ||
-            (adminSecret !== process.env.ADMIN_SECRET && adminSecret !== 'Gupta-cars-admin-2024')
+            (adminSecret !== process.env.ADMIN_SECRET && adminSecret !== 'Gupta-cars-admin-2026')
         ) {
             res.status(403).json({ success: false, message: 'Invalid or missing admin secret' });
             return;

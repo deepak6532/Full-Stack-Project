@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                                 <HiPhone size={24} />
                             </div>
                             <div>
-                                <h3 className="font-bold text-lg mb-1">Phone</h3>
+                                <h3 className="font-bold text-lg mb-1">Mobile Number</h3>
                                 <p className="text-gray-500">+91 8875692821</p>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-medium mb-2">Phone</label>
+                                    <label className="block text-sm font-medium mb-2">Mobile Number</label>
                                     <input
                                         type="tel"
                                         name="phone"

@@ -15,8 +15,6 @@ export interface IBooking extends Document {
     status: 'Pending' | 'Approved' | 'Declined' | 'Cancelled' | 'Completed';
     paymentStatus: 'Paid' | 'Failed' | 'Pay on Arrival';
     cancellationPolicy: string;
-    razorpayOrderId?: string;
-    razorpayPaymentId?: string;
 }
 
 const bookingSchema = new Schema<IBooking>(
@@ -80,14 +78,6 @@ const bookingSchema = new Schema<IBooking>(
         cancellationPolicy: {
             type: String,
             default: 'Non-Refundable',
-        },
-        razorpayOrderId: {
-            type: String,
-            default: '',
-        },
-        razorpayPaymentId: {
-            type: String,
-            default: '',
         },
     },
     { timestamps: true }

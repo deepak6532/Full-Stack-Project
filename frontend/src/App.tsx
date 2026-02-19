@@ -16,6 +16,7 @@ import MyBookings from './pages/MyBookings';
 import Contact from './pages/Contact';
 import Dashboard from './pages/admin/Dashboard';
 import ManageCars from './pages/admin/ManageCars';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
@@ -44,6 +45,7 @@ const App: React.FC = () => {
               </Routes>
             </main>
             <Footer />
+            <ScrollToTop />
           </div>
           <Toaster
             position="top-right"

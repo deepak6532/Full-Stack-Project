@@ -58,9 +58,10 @@ const HeroSlider: React.FC = () => {
                     className="absolute inset-0"
                 >
                     {/* Background Image with Overlay */}
-                    <div
-                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
-                        style={{ backgroundImage: `url(${slides[current].image})` }}
+                    <img
+                        src={slides[current].image}
+                        alt={slides[current].carName}
+                        className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
 

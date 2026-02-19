@@ -54,7 +54,7 @@ const About: React.FC = () => {
                             </div>
                             <div className="flex items-center gap-3">
                                 <HiLocationMarker className="text-[var(--color-primary)]" size={20} />
-                                <span className={isDark ? 'text-gray-300' : 'text-gray-700'}>Sector 45, Gurgaon, India</span>
+                                <span className={isDark ? 'text-gray-300' : 'text-gray-700'}>Sector 45, Mansarovar,Rajasthan, India</span>
                             </div>
                         </div>
                     </div>

@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
                         <ul className="space-y-2 text-slate-300">
-                            <li className="flex items-center gap-2">📍 123 Main Street, New Delhi</li>
+                            <li className="flex items-center gap-2">📍 123 Main Street,Mansarovar Jaipur</li>
                             <li className="flex items-center gap-2">📞 +91 8875692821</li>
                             <li className="flex items-center gap-2">✉️ info@Guptacarrental.com</li>
                         </ul>
