@@ -5,7 +5,7 @@ import { useTheme } from '../../context/ThemeContext';
 const reviews = [
     {
         id: 1,
-        name: 'Rahul Sharma',
+        name: 'Rahul Gupta',
         location: 'Delhi',
         rating: 5,
         text: 'Excellent service! I rented a Mahindra Thar for a weekend trip to erratic terrain, and the car was in top condition. Very smooth booking process.',
@@ -16,7 +16,7 @@ const reviews = [
         name: 'Priya Patel',
         location: 'Mumbai',
         rating: 5,
-        text: 'The XUV700 is a beast! Loved the experience. The staff was very helpful and the car was clean and sanitized. Highly recommend Sharma Car Rental.',
+        text: 'The XUV700 is a beast! Loved the experience. The staff was very helpful and the car was clean and sanitized. Highly recommend Gupta Car Rental.',
         date: '1 week ago'
     },
     {
@@ -48,8 +48,8 @@ const Testimonials: React.FC = () => {
                         <div
                             key={review.id}
                             className={`p-8 rounded-2xl relative transition-all duration-300 hover:-translate-y-2 ${isDark
-                                    ? 'bg-white/5 border border-white/10 hover:shadow-orange-500/10 hover:shadow-2xl'
-                                    : 'bg-gray-50 border border-gray-100 hover:shadow-xl'
+                                ? 'bg-white/5 border border-white/10 hover:shadow-orange-500/10 hover:shadow-2xl'
+                                : 'bg-gray-50 border border-gray-100 hover:shadow-xl'
                                 }`}
                         >
                             <div className="flex items-center gap-1 mb-6 text-orange-500">

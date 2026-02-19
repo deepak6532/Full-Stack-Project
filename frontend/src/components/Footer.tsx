@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                     <div className="col-span-1 md:col-span-2">
                         <div className="flex items-center space-x-2 mb-4">
                             <span className="text-3xl">🚗</span>
-                            <h3 className="text-2xl font-bold">Sharma Car Rental</h3>
+                            <h3 className="text-2xl font-bold">Gupta Car Rental</h3>
                         </div>
                         <p className="text-slate-300 mb-4 max-w-md">
                             Your trusted partner for premium car rentals. Experience the road with comfort, safety, and style.
@@ -48,13 +48,13 @@ const Footer: React.FC = () => {
                         <ul className="space-y-2 text-slate-300">
                             <li className="flex items-center gap-2">📍 123 Main Street, New Delhi</li>
                             <li className="flex items-center gap-2">📞 +91 8875692821</li>
-                            <li className="flex items-center gap-2">✉️ info@sharmacarrental.com</li>
+                            <li className="flex items-center gap-2">✉️ info@Guptacarrental.com</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="border-t border-white/10 mt-8 pt-8 text-center text-slate-400 text-sm">
-                    <p>© {new Date().getFullYear()} Sharma Car Rental. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Gupta Car Rental. All rights reserved.</p>
                 </div>
             </div>
         </footer>

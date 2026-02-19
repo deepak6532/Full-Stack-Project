@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Email</h3>
-                                <p className="text-gray-500">info@sharmacars.com</p>
+                                <p className="text-gray-500">info@Guptacars.com</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-6">
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Address</h3>
-                                <p className="text-gray-500">Mumbai, Maharashtra, India</p>
+                                <p className="text-gray-500">Mansarovar, Jaipur, India</p>
                             </div>
                         </div>
                     </motion.div>

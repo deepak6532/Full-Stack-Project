@@ -1,7 +1,7 @@
 {
-  "name": "sharma-car-rental-backend",
+  "name": "Gupta-car-rental-backend",
   "version": "1.0.0",
-  "description": "Sharma Car Rental - Backend API",
+  "description": "Gupta Car Rental - Backend API",
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",

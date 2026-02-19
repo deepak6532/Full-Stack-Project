@@ -35,13 +35,13 @@ export const handleBookingAction = async (req: AuthRequest, res: Response): Prom
             if (action === 'Approved') {
                 emailSent = await sendEmail(
                     user.email,
-                    `Booking Approved - ${bookingId} | Sharma Car Rental`,
+                    `Booking Approved - ${bookingId} | Gupta Car Rental`,
                     bookingApprovedEmail(bookingId, user.name, `${car.brand} ${car.name}`, booking.startDate.toLocaleDateString())
                 );
             } else {
                 emailSent = await sendEmail(
                     user.email,
-                    `Booking Declined - ${bookingId} | Sharma Car Rental`,
+                    `Booking Declined - ${bookingId} | Gupta Car Rental`,
                     bookingDeclinedEmail(bookingId, user.name)
                 );
             }

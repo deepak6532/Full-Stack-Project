@@ -8,7 +8,7 @@ const connectDB = async (): Promise<void> => {
         console.error(`❌ Cloud MongoDB Connection Error: ${error}`);
         console.log('⚠️ Attempting to connect to Local MongoDB...');
         try {
-            const localConn = await mongoose.connect('mongodb://127.0.0.1:27017/sharma-car-rental');
+            const localConn = await mongoose.connect('mongodb://127.0.0.1:27017/Gupta-car-rental');
             console.log(`✅ Local MongoDB Connected: ${localConn.connection.host}`);
         } catch (localError) {
             console.error(`❌ Local MongoDB Connection Error: ${localError}`);

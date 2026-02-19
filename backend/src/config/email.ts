@@ -31,7 +31,7 @@ export const sendEmail = async (to: string, subject: string, html: string): Prom
     try {
         const transporter = createTransporter();
         const info = await transporter.sendMail({
-            from: process.env.EMAIL_FROM || '"Sharma Car Rental" <noreply@sharmacarrental.com>',
+            from: process.env.EMAIL_FROM || '"Gupta Car Rental" <noreply@Guptacarrental.com>',
             to,
             subject,
             html,

@@ -16,8 +16,8 @@ const seedData = async () => {
 
         // Create admin user
         await User.create({
-            name: 'Admin Sharma',
-            email: 'admin@sharmacarrental.com',
+            name: 'Admin Gupta',
+            email: 'admin@Guptacarrental.com',
             password: 'admin123',
             phone: '9876543210',
             role: 'admin',
@@ -127,7 +127,7 @@ const seedData = async () => {
         await Car.insertMany(cars);
 
         console.log('✅ Database seeded successfully!');
-        console.log('👤 Admin: admin@sharmacarrental.com / admin123');
+        console.log('👤 Admin: admin@Guptacarrental.com / admin123');
         console.log('👤 User:  rahul@example.com / user123');
         console.log(`🚗 ${cars.length} cars added`);
 

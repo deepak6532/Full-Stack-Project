@@ -15,17 +15,17 @@ export const bookingReceivedEmail = (bookingId: string, userName: string): strin
 <body>
   <div class="container">
     <div class="header">
-      <h1>🚗 Sharma Car Rental</h1>
+      <h1>🚗 Gupta Car Rental</h1>
     </div>
     <div class="body">
       <h2>Thank You, ${userName}!</h2>
-      <p>Thank you for choosing <strong>Sharma Car Rental</strong>! Your booking request has been received successfully.</p>
+      <p>Thank you for choosing <strong>Gupta Car Rental</strong>! Your booking request has been received successfully.</p>
       <div class="booking-id">Booking ID: ${bookingId}</div>
       <p>Your request is currently <strong>under review</strong> by our team. We will notify you once it has been processed.</p>
       <p>If you have any questions, feel free to reach out to our support team.</p>
     </div>
     <div class="footer">
-      <p>© 2024 Sharma Car Rental. All rights reserved.</p>
+      <p>© 2024 Gupta Car Rental. All rights reserved.</p>
     </div>
   </div>
 </body>
@@ -60,7 +60,7 @@ export const bookingApprovedEmail = (bookingId: string, userName: string, carNam
       <p>We look forward to seeing you! Please arrive on time for your pickup.</p>
     </div>
     <div class="footer">
-      <p>© 2024 Sharma Car Rental. All rights reserved.</p>
+      <p>© 2024 Gupta Car Rental. All rights reserved.</p>
     </div>
   </div>
 </body>
@@ -93,7 +93,7 @@ export const bookingDeclinedEmail = (bookingId: string, userName: string): strin
       <p>Please try booking another vehicle or contact our support team for assistance.</p>
     </div>
     <div class="footer">
-      <p>© 2024 Sharma Car Rental. All rights reserved.</p>
+      <p>© 2024 Gupta Car Rental. All rights reserved.</p>
     </div>
   </div>
 </body>

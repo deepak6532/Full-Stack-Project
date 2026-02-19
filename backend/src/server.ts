@@ -46,14 +46,14 @@ app.use('/api/contact', userQueryRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
-    res.status(200).json({ status: 'OK', message: 'Sharma Car Rental API is running 🚗' });
+    res.status(200).json({ status: 'OK', message: 'Gupta Car Rental API is running 🚗' });
 });
 
 // Error handler
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-    console.log(`🚗 Sharma Car Rental Server running on port ${PORT}`);
+    console.log(`🚗 Gupta Car Rental Server running on port ${PORT}`);
     console.log(`📡 API: http://localhost:${PORT}/api/health`);
 });
 

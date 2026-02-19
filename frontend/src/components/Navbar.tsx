@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
                         <span className="text-3xl">🚗</span>
                         <div>
                             <h1 className="text-xl font-bold bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-accent)] bg-clip-text text-transparent">
-                                Sharma Car Rental
+                                Gupta Car Rental
                             </h1>
                         </div>
                     </Link>

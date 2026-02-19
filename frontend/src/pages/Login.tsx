@@ -38,7 +38,7 @@ const Login: React.FC = () => {
                 <div className="text-center mb-8">
                     <span className="text-5xl">🚗</span>
                     <h2 className={`text-2xl font-bold mt-4 ${isDark ? 'text-white' : 'text-[var(--color-secondary)]'}`}>Welcome Back</h2>
-                    <p className={isDark ? 'text-[var(--color-text-secondary-dark)]' : 'text-[var(--color-text-secondary)]'}>Login to your Sharma Car Rental account</p>
+                    <p className={isDark ? 'text-[var(--color-text-secondary-dark)]' : 'text-[var(--color-text-secondary)]'}>Login to your Gupta Car Rental account</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -75,7 +75,7 @@ const Login: React.FC = () => {
                 <div className={`mt-6 p-4 rounded-xl text-sm ${isDark ? 'bg-[var(--color-surface-dark)] border border-[var(--color-border-dark)]' : 'bg-gray-50 border border-[var(--color-border)]'}`}>
                     <p className={`font-semibold mb-2 ${isDark ? 'text-white' : 'text-[var(--color-secondary)]'}`}>Demo Credentials:</p>
                     <p className={isDark ? 'text-[var(--color-text-secondary-dark)]' : 'text-[var(--color-text-secondary)]'}>
-                        Admin: admin@sharmacarrental.com / admin123<br />
+                        Admin: admin@Guptacarrental.com / admin123<br />
                         User: rahul@example.com / user123
                     </p>
                 </div>

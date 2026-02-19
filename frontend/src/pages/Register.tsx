@@ -52,7 +52,7 @@ const Register: React.FC = () => {
                 <div className="text-center mb-8">
                     <span className="text-5xl">🚗</span>
                     <h2 className={`text-2xl font-bold mt-4 ${isDark ? 'text-white' : 'text-[var(--color-secondary)]'}`}>Create Account</h2>
-                    <p className={isDark ? 'text-[var(--color-text-secondary-dark)]' : 'text-[var(--color-text-secondary)]'}>Join Sharma Car Rental today</p>
+                    <p className={isDark ? 'text-[var(--color-text-secondary-dark)]' : 'text-[var(--color-text-secondary)]'}>Join Gupta Car Rental today</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-4">

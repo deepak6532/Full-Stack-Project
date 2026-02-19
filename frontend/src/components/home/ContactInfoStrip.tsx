@@ -14,12 +14,12 @@ const ContactInfoStrip: React.FC = () => {
         {
             icon: <HiMail size={32} />,
             title: 'Write to us',
-            content: 'info@sharmacars.com'
+            content: 'info@Guptacars.com'
         },
         {
             icon: <HiLocationMarker size={32} />,
             title: 'Address',
-            content: 'Mumbai, Maharashtra, India'
+            content: 'Mansarovar, Jaipur, India'
         }
     ];
 

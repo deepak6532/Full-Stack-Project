@@ -54,7 +54,7 @@ export const createBooking = async (req: AuthRequest, res: Response): Promise<vo
             const user = req.user!;
             await sendEmail(
                 user.email,
-                `Booking Confirmed - ${bookingId} | Sharma Car Rental`,
+                `Booking Confirmed - ${bookingId} | Gupta Car Rental`,
                 bookingReceivedEmail(bookingId, user.name)
             );
         } catch (emailError) {

@@ -19,7 +19,7 @@ const About: React.FC = () => {
                 <div className="text-center mb-16 animate-fade-in">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">
                         <span className={`bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-accent)]`}>
-                            About Sharma Car Rental
+                            About Gupta Car Rental
                         </span>
                     </h1>
                     <p className={`text-xl max-w-3xl mx-auto ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
@@ -36,11 +36,11 @@ const About: React.FC = () => {
                             </div>
                             <div>
                                 <h2 className={`text-2xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>Meet the Owner</h2>
-                                <p className="text-[var(--color-primary)] font-medium">Deepak Sharma</p>
+                                <p className="text-[var(--color-primary)] font-medium">Deepak Gupta</p>
                             </div>
                         </div>
                         <p className={`mb-6 leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                            "I started Sharma Car Rental with a simple vision: to provide a hassle-free, premium car rental experience.
+                            "I started Gupta Car Rental with a simple vision: to provide a hassle-free, premium car rental experience.
                             Whether you need a car for a weekend getaway or a business trip, we ensure every vehicle is maintained to the highest standards."
                         </p>
                         <div className="space-y-4">
@@ -50,7 +50,7 @@ const About: React.FC = () => {
                             </div>
                             <div className="flex items-center gap-3">
                                 <HiMail className="text-[var(--color-primary)]" size={20} />
-                                <span className={isDark ? 'text-gray-300' : 'text-gray-700'}>contact@sharmacarrental.com</span>
+                                <span className={isDark ? 'text-gray-300' : 'text-gray-700'}>contact@Guptacarrental.com</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <HiLocationMarker className="text-[var(--color-primary)]" size={20} />
