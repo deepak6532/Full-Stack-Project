@@ -1,7 +1,8 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import express from 'express';
+/// <reference types="node" />
+import express, { Request, Response } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
@@ -10,7 +11,6 @@ import cookieParser from 'cookie-parser';
 import connectDB from './config/db';
 import { errorHandler } from './middleware/errorHandler';
 
-// Route imports
 // Route imports
 import authRoutes from './routes/authRoutes';
 import carRoutes from './routes/carRoutes';
@@ -45,7 +45,7 @@ app.use('/api/contact', userQueryRoutes);
 // app.use('/api/payment', paymentRoutes);
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get('/api/health', (req: Request, res: Response) => {
     res.status(200).json({ status: 'OK', message: 'Gupta Car Rental API is running 🚗' });
 });
 
