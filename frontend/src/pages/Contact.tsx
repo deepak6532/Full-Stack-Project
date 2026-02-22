@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            await axios.post('http://localhost:5000/api/contact/submit', formData);
+            await axios.post(`${import.meta.env.VITE_BACKEND_BASE_URL}/api/contact/submit`, formData);
             toast.success('Message sent successfully!');
             setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
         } catch (error) {
